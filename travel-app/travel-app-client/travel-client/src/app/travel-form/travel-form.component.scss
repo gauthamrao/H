@@ -1,0 +1,55 @@
+.travel-form {
+    margin-top: 100px;
+    h1 {
+        text-align: center;
+    }
+    form{
+        margin: auto;
+        width: 50%;
+        height: 340px;
+        margin-top: 40px;
+        box-shadow: 2px 5px #888888;
+        border: 1px solid #888888;
+        label{
+            span{
+                color: red;
+            }
+        }
+        .form-group{
+            margin: 25px auto;
+            width: 60%;
+            input, select{
+                float: right;
+                border-radius: 5px;
+                height: 25px;
+                width: 50%;
+                border: 1px solid black;
+                padding: 2px;
+            }
+            select {
+                height: 30px;
+                width: 52%;
+            }
+            i{
+                position: relative;
+                left: 55%;
+                top: 6px;
+                float: right;
+            }
+        }
+        input[type=button] {
+            padding: 5px;
+            text-align: center;
+            margin: 0 auto;
+            width: 20%;
+            float: right;
+            margin-right: 20%;
+            margin-top: 20px;
+        }
+        .success-message{
+            color: green;
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+}

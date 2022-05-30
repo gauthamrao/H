@@ -1,0 +1,21 @@
+<div class="travel-dashboard">
+    <h1>Travel Dashboard</h1>
+    <div class="travel-dashboard-main">
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Email Address</th>
+                <th>Location</th>
+                <th>Number of Travellers</th>
+                <th>Budget per Person</th>
+            </tr>
+            <tr *ngFor="let travelInfo of travelerInformation">
+                <td>{{travelInfo.name}}</td>
+                <td>{{travelInfo.email_address}}</td>
+                <td>{{travelInfo.travel_location}}</td>
+                <td>{{travelInfo.number_of_travellers}}</td>
+                <td>{{travelInfo.budget_per_person}} $</td>
+            </tr>
+        </table>
+    </div>
+</div>

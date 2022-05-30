@@ -1,0 +1,31 @@
+<div class="travel-form">
+    <h1>Travel Form</h1>
+    <form [formGroup]="myForm">
+        <div *ngIf="successMessage" class="success-message">Data Added Successfully</div>
+        <div class="form-group">
+            <label for="name">Name<span>*</span></label>
+            <input type="text" formControlName="name" placeholder="Name" />
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address<span>*</span></label>
+            <input type="text" formControlName="email_address" placeholder="Email Address" />
+        </div>
+        <div class="form-group">
+            <label for="name">Where do you want to go?<span>*</span></label>
+            <select formControlName="travel_location">
+                <option>India</option>
+                <option>Africa</option>
+                <option>Europe</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="name">Number of travellers<span>*</span></label>
+            <input type="number" formControlName="number_of_travellers" placeholder="Number of Travellers" />
+        </div>
+        <div class="form-group">
+            <label for="name">Budget per person<span>*</span></label>
+            <input type="number" min="0.01" step="0.01" max="9999999999" formControlName="budget_per_person" placeholder="Budget per Person" /><i>$</i>
+        </div>
+        <input type="button" (click)="submitData()" [disabled]="!myForm.valid" value="Submit"/>
+    </form>
+</div>
